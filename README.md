@@ -1,4 +1,4 @@
-👋 Sawasdee, I'm Nattapat Ritter known as Backpack
+👋 Sawasdee, I'm Nattapat Ritter also known as Backpack
 
 <div align="center">
 
