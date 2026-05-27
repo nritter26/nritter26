@@ -1,16 +1,78 @@
-## Hi there 👋
+👋 Sawasdee, I'm Nattapat Ritter known as Backpack
 
-<!--
-**nritter26/nritter26** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
 
-Here are some ideas to get you started:
+### 🚀 Developer • ✊🏻 Man of the people • 🤖 Tech Explorer • 👧 Proud Father
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=730&lines=%22The+right+to+education+is+the+foundation+of+a+free+society.%22)](https://git.io/typing-svg)
+
+<p align="center">
+  <a href="https://github.com" style="text-decoration: none;">
+    <button type="button" style="background-color: #38BDF8; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 5px; cursor: pointer;">
+      📦 Open Repository
+    </button>
+  </a>
+</p>
+
+
+</div>
+
+---
+
+## 🧠 About Me
+
+```ts
+const nattapat = {
+  location: "Bangkok, Thailand",
+  style: ["Cyberpunk", "Dark", "Minimal"],
+  interests: [
+    "Interactive AI Tutors",
+    "UX Design",
+    "Automation",
+    "TypeScript",
+    "Creative Coding",
+    "Whatever that makes knowledge free to everyone"
+  ],
+  currentlyBuilding: "Futuristic tech site for free learning experiences"
+};
+```
+
+## ⚒️ Tech Stack
+
+### Languages
+- TypeScript / JavaScript
+- Go 
+- Python
+- Bash
+
+### Tools & Frameworks
+- React / Node.js
+- Git & GitHub
+- VS Code / Flask
+- Docker
+- Next.js
+- Vue.js
+- Express.js
+- Boostrap
+
+### Databases 
+  - PostgreSQL
+  - MySQL
+  - MongoDB
+  - AWS
+    
+---
+
+## 🌌 Current Focus
+*   Building AI-powered tools
+*   Designing a learning tools for newcomers to use free of charge.
+*   Creating futuristic UX concepts
+
+---
+
+
+<br />
+
+<div align="center">
+⚡ <em>"The right to education is the foundation of a free society."</em>
+</div>
