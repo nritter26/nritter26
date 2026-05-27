@@ -9,7 +9,7 @@
 <p align="center">
   <a href="https://github.com/nritter26/acadamic" style="text-decoration: none;">
     <button type="button" style="background-color: #38BDF8; color: white; border: none; padding: 10px 20px; font-size: 16px; font-weight: bold; border-radius: 5px; cursor: pointer;">
-      📦 Open Repository
+      📦 Start Learning
     </button>
   </a>
 </p>
