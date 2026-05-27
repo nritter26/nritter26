@@ -53,7 +53,6 @@ const nattapat = {
 - Next.js
 - Vue.js
 - Express.js
-- Boostrap
 
 ### Databases 
   - PostgreSQL
