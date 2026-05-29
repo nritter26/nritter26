@@ -46,12 +46,10 @@ const nattapat = {
 - Bash
 
 ### Tools & Frameworks
-- React / Node.js
+- React / Svelte / Vue / Bootstrap
+- Node.js 
 - Git & GitHub
-- VS Code / Flask
 - Docker
-- Next.js
-- Vue.js
 - Express.js
 
 ### Databases 
