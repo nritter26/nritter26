@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### 🚀 Developer • ✊🏻 Man of the people • 🤖 Tech Explorer • 👧 Proud Father
+### 🚀 Developer • 🤖 AI Explorer • 👧 Proud Father
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=730&lines=%22The+right+to+education+is+the+foundation+of+a+free+society.%22)](https://git.io/typing-svg)
 
@@ -46,11 +46,11 @@ const nattapat = {
 - Bash
 
 ### Tools & Frameworks
-- React / Svelte / Vue / Bootstrap
+- React / Svelte / Vue 
 - Node.js 
 - Git & GitHub
 - Docker
-- Express.js
+- Express.js // Vite
 
 ### Databases 
   - PostgreSQL
@@ -62,7 +62,7 @@ const nattapat = {
 
 ## 🌌 Current Focus
 *   Building AI-powered tools
-*   Designing a learning tools for newcomers to use free of charge.
+*   Designing a learning app
 *   Creating futuristic UX concepts
 
 ---
