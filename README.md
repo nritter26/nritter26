@@ -41,16 +41,15 @@ const nattapat = {
 
 ### Languages
 - TypeScript / JavaScript
-- Go 
 - Python
 - Bash
 
 ### Tools & Frameworks
-- React / Svelte / Vue 
-- Node.js 
-- Git & GitHub
-- Docker
-- Express.js // Vite
+- React / Svelte / Vue / Tauri
+- Node.js / Express / Vite
+- Docker 
+- Playwright
+- Bash
 
 ### Databases 
   - PostgreSQL
