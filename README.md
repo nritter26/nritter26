@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### 🚀 Developer • 🤖 Tech Explorer • 👧 Proud Father
+### 🚀 Developer • 🤖 Tech Explorer • 🎶 Music Producer
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=730&lines=%22The+right+to+education+is+the+foundation+of+a+free+society.%22)](https://git.io/typing-svg)
 
