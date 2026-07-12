@@ -1,53 +1,6 @@
 <div align="center">
 
-<svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="800" height="400" fill="#0a0a0f"/>
-
-  <!-- Static scanlines (no animation - GitHub strips animateTransform) -->
-  <rect width="800" height="1" y="4" fill="#00fff5" opacity="0.06"/>
-  <rect width="800" height="1" y="8" fill="#00fff5" opacity="0.04"/>
-  <rect width="800" height="1" y="12" fill="#00fff5" opacity="0.06"/>
-  <rect width="800" height="1" y="16" fill="#00fff5" opacity="0.03"/>
-  <rect width="800" height="1" y="20" fill="#00fff5" opacity="0.06"/>
-  <rect width="800" height="1" y="24" fill="#00fff5" opacity="0.04"/>
-  <rect width="800" height="1" y="28" fill="#00fff5" opacity="0.05"/>
-  <rect width="800" height="1" y="32" fill="#00fff5" opacity="0.03"/>
-  <rect width="800" height="1" y="36" fill="#00fff5" opacity="0.06"/>
-  <rect width="800" height="1" y="40" fill="#00fff5" opacity="0.04"/>
-
-  <!-- Glitch echo layer (offset duplicate - creates glitch without filters) -->
-  <text x="402" y="161" text-anchor="middle" font-family="'Courier New', monospace" font-size="56" font-weight="bold" fill="#ff00ff" opacity="0.15">
-    Nattapat Ritter
-    <animate attributeName="opacity" values="0.15;0.15;0.15;0.4;0.15;0.15;0.15;0.3;0.15;0.15" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="x" values="402;402;402;408;402;402;402;396;402;402" dur="4s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Main name with neon flicker -->
-  <text x="400" y="160" text-anchor="middle" font-family="'Courier New', monospace" font-size="56" font-weight="bold" fill="#00fff5" stroke="#ff00ff" stroke-width="1.5">
-    Nattapat Ritter
-    <animate attributeName="opacity" values="1;1;1;1;0.3;1;1;1;1;1;1;1;0.5;1;1" dur="3s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Alias with flicker -->
-  <text x="400" y="200" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" fill="#ff00ff" opacity="0.9">
-    also known as Backpack
-    <animate attributeName="opacity" values="0.9;0.9;0.9;0.4;0.9;0.9;0.9;0.9;0.6;0.9" dur="4s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Subtitle -->
-  <text x="400" y="240" text-anchor="middle" font-family="'Courier New', monospace" font-size="18" fill="#00fff5" opacity="0.8">
-    Developer · Tech Explorer · Music Producer
-  </text>
-
-  <!-- Decorative lines -->
-  <line x1="100" y1="280" x2="700" y2="280" stroke="#ff00ff" stroke-width="1" opacity="0.3">
-    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
-  </line>
-  <line x1="200" y1="290" x2="600" y2="290" stroke="#00fff5" stroke-width="1" opacity="0.2">
-    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="2.5s" repeatCount="indefinite"/>
-  </line>
-</svg>
+![Hero Banner](assets/cyberpunk/hero.gif)
 
 <br/>
 
@@ -98,33 +51,16 @@ const nattapat = {
 
 ## ⚒️ Tech Stack
 
-<svg width="100%" height="50" viewBox="0 0 600 50" xmlns="http://www.w3.org/2000/svg">
-  <!-- Glitch echo for Tech Stack header -->
-  <text x="302" y="36" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#ff00ff" opacity="0.12">
-    ⚒️ Tech Stack
-    <animate attributeName="opacity" values="0.12;0.12;0.12;0.3;0.12;0.12;0.12;0.25;0.12;0.12" dur="5s" repeatCount="indefinite"/>
-    <animate attributeName="x" values="302;302;302;308;302;302;302;296;302;302" dur="5s" repeatCount="indefinite"/>
-  </text>
-  <text x="300" y="35" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#00fff5">
-    ⚒️ Tech Stack
-    <animate attributeName="opacity" values="1;1;1;0.4;1;1;1;1;0.6;1" dur="4s" repeatCount="indefinite"/>
-  </text>
-</svg>
+<div align="center">
 
 ### Languages
-
-<div align="center">
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-00fff5?style=flat-square&logo=typescript&logoColor=0a0a0f&labelColor=0d1117)
 ![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?style=flat-square&logo=javascript&logoColor=0a0a0f&labelColor=0d1117)
 ![Python](https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python&logoColor=white&labelColor=0d1117)
 ![Bash](https://img.shields.io/badge/Bash-4eaa25?style=flat-square&logo=gnubash&logoColor=white&labelColor=0d1117)
 
-</div>
-
 ### Tools & Frameworks
-
-<div align="center">
 
 ![React](https://img.shields.io/badge/React-61dafb?style=flat-square&logo=react&logoColor=0a0a0f&labelColor=0d1117)
 ![Svelte](https://img.shields.io/badge/Svelte-ff3e00?style=flat-square&logo=svelte&logoColor=white&labelColor=0d1117)
@@ -136,11 +72,7 @@ const nattapat = {
 ![Docker](https://img.shields.io/badge/Docker-2496ed?style=flat-square&logo=docker&logoColor=white&labelColor=0d1117)
 ![Playwright](https://img.shields.io/badge/Playwright-2ead33?style=flat-square&logo=playwright&logoColor=white&labelColor=0d1117)
 
-</div>
-
 ### Databases & Cloud
-
-<div align="center">
 
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169e1?style=flat-square&logo=postgresql&logoColor=white&labelColor=0d1117)
 ![MySQL](https://img.shields.io/badge/MySQL-4479a1?style=flat-square&logo=mysql&logoColor=white&labelColor=0d1117)
@@ -149,72 +81,27 @@ const nattapat = {
 
 </div>
 
-<!-- Animated neon divider -->
-<svg width="100%" height="20" viewBox="0 0 800 20" xmlns="http://www.w3.org/2000/svg">
-  <line x1="0" y1="10" x2="800" y2="10" stroke="#00fff5" stroke-width="1" opacity="0.4"/>
-  <circle r="4" fill="#00fff5" cy="10" opacity="0.9">
-    <animate attributeName="cx" values="0;800" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="6" fill="#ff00ff" cy="10" opacity="0.3">
-    <animate attributeName="cx" values="0;800" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
-  </circle>
-</svg>
+![Divider](assets/cyberpunk/divider-cyan.gif)
 
 ---
 
 ## 🌌 Current Focus
 
-<svg width="100%" height="50" viewBox="0 0 600 50" xmlns="http://www.w3.org/2000/svg">
-  <!-- Glitch echo -->
-  <text x="302" y="36" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#00fff5" opacity="0.1">
-    🌌 Current Focus
-    <animate attributeName="opacity" values="0.1;0.1;0.1;0.25;0.1;0.1;0.1;0.2;0.1;0.1" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="x" values="302;302;302;307;302;302;302;297;302;302" dur="4s" repeatCount="indefinite"/>
-  </text>
-  <text x="300" y="35" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#ff00ff">
-    🌌 Current Focus
-    <animate attributeName="opacity" values="1;1;0.5;1;1;1;0.3;1;1;1" dur="4s" repeatCount="indefinite"/>
-  </text>
-</svg>
-
 <table align="center" style="margin: 20px auto; border-collapse: separate; border-spacing: 16px;">
   <tr>
     <td align="center" style="background-color: #0d1117; border: 1px solid #00fff5; border-radius: 12px; padding: 20px 24px; width: 200px;">
-      <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="2" width="56" height="56" rx="8" fill="none" stroke="#00fff5" stroke-width="1.5" opacity="0.8">
-          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
-        </rect>
-        <text x="30" y="38" text-anchor="middle" font-size="28">🤖</text>
-      </svg>
-      <br/>
-      <span style="color: #00fff5; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold;">AI-Powered Tools</span>
-      <br/>
+      🤖<br/>
+      <span style="color: #00fff5; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold;">AI-Powered Tools</span><br/>
       <span style="color: #e0e0e0; font-size: 12px;">Building AI-powered tools</span>
     </td>
     <td align="center" style="background-color: #0d1117; border: 1px solid #ff00ff; border-radius: 12px; padding: 20px 24px; width: 200px;">
-      <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="2" width="56" height="56" rx="8" fill="none" stroke="#ff00ff" stroke-width="1.5" opacity="0.8">
-          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.3s" repeatCount="indefinite"/>
-        </rect>
-        <text x="30" y="38" text-anchor="middle" font-size="28">📚</text>
-      </svg>
-      <br/>
-      <span style="color: #ff00ff; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold;">Learning App</span>
-      <br/>
+      📚<br/>
+      <span style="color: #ff00ff; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold;">Learning App</span><br/>
       <span style="color: #e0e0e0; font-size: 12px;">Designing a learning app</span>
     </td>
     <td align="center" style="background-color: #0d1117; border: 1px solid #bf00ff; border-radius: 12px; padding: 20px 24px; width: 200px;">
-      <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-        <rect x="2" y="2" width="56" height="56" rx="8" fill="none" stroke="#bf00ff" stroke-width="1.5" opacity="0.8">
-          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
-        </rect>
-        <text x="30" y="38" text-anchor="middle" font-size="28">🎨</text>
-      </svg>
-      <br/>
-      <span style="color: #bf00ff; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold;">UX Concepts</span>
-      <br/>
+      🎨<br/>
+      <span style="color: #bf00ff; font-family: 'Courier New', monospace; font-size: 14px; font-weight: bold;">UX Concepts</span><br/>
       <span style="color: #e0e0e0; font-size: 12px;">Creating futuristic UX concepts</span>
     </td>
   </tr>
@@ -222,129 +109,21 @@ const nattapat = {
 
 <br/>
 
-<!-- System Status Bar -->
-<div align="center">
-
-<svg width="100%" height="50" viewBox="0 0 800 50" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="800" height="50" rx="6" fill="#0d1117" stroke="#00fff5" stroke-width="1" opacity="0.8"/>
-
-  <!-- Left: Status -->
-  <circle cx="30" cy="25" r="5" fill="#00ff41">
-    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
-  <text x="45" y="29" font-family="'Courier New', monospace" font-size="14" fill="#00ff41">SYSTEM: ONLINE</text>
-
-  <!-- Center: OS Name -->
-  <text x="400" y="29" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#00fff5" opacity="0.8">
-    BACKPACK_OS v2.0
-    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Right: Mood -->
-  <text x="620" y="29" font-family="'Courier New', monospace" font-size="14" fill="#ff00ff">
-    MOOD: CODING
-  </text>
-  <rect x="748" y="20" width="8" height="16" fill="#ff00ff" opacity="0.8">
-    <animate attributeName="opacity" values="0.8;0;0.8" dur="1s" repeatCount="indefinite"/>
-  </rect>
-</svg>
-
-</div>
+![Status Bar](assets/cyberpunk/status-bar.gif)
 
 <br/>
 
 ## 📊 Skill Matrix
 
-<svg width="100%" height="220" viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="barGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#00fff5"/>
-      <stop offset="100%" style="stop-color:#ff00ff"/>
-    </linearGradient>
-  </defs>
-
-  <!-- TypeScript -->
-  <text x="130" y="30" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">TypeScript</text>
-  <rect x="140" y="18" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="18" width="0" height="20" rx="4" fill="url(#barGradient)">
-    <animate attributeName="width" from="0" to="420" dur="1.5s" fill="freeze"/>
-  </rect>
-  <text x="570" y="33" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">95%</text>
-
-  <!-- React/Svelte -->
-  <text x="130" y="70" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">React / Svelte</text>
-  <rect x="140" y="58" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="58" width="0" height="20" rx="4" fill="url(#barGradient)">
-    <animate attributeName="width" from="0" to="396" dur="1.5s" fill="freeze" begin="0.2s"/>
-  </rect>
-  <text x="546" y="73" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">90%</text>
-
-  <!-- Node.js -->
-  <text x="130" y="110" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">Node.js</text>
-  <rect x="140" y="98" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="98" width="0" height="20" rx="4" fill="url(#barGradient)">
-    <animate attributeName="width" from="0" to="378" dur="1.5s" fill="freeze" begin="0.4s"/>
-  </rect>
-  <text x="528" y="113" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">85%</text>
-
-  <!-- Python -->
-  <text x="130" y="150" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">Python</text>
-  <rect x="140" y="138" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="138" width="0" height="20" rx="4" fill="url(#barGradient)">
-    <animate attributeName="width" from="0" to="336" dur="1.5s" fill="freeze" begin="0.6s"/>
-  </rect>
-  <text x="486" y="153" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">80%</text>
-
-  <!-- DevOps -->
-  <text x="130" y="190" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">DevOps</text>
-  <rect x="140" y="178" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="178" width="0" height="20" rx="4" fill="url(#barGradient)">
-    <animate attributeName="width" from="0" to="315" dur="1.5s" fill="freeze" begin="0.8s"/>
-  </rect>
-  <text x="465" y="193" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">75%</text>
-</svg>
+![Skill Matrix](assets/cyberpunk/skill-matrix.gif)
 
 <br/>
 
-<!-- Animated neon divider -->
-<svg width="100%" height="20" viewBox="0 0 800 20" xmlns="http://www.w3.org/2000/svg">
-  <line x1="0" y1="10" x2="800" y2="10" stroke="#ff00ff" stroke-width="1" opacity="0.4"/>
-  <circle r="4" fill="#ff00ff" cy="10" opacity="0.9">
-    <animate attributeName="cx" values="800;0" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="3s" repeatCount="indefinite"/>
-  </circle>
-  <circle r="6" fill="#00fff5" cy="10" opacity="0.3">
-    <animate attributeName="cx" values="800;0" dur="3s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
-  </circle>
-</svg>
+![Divider](assets/cyberpunk/divider-magenta.gif)
 
 <br/>
 
-<!-- Animated quote -->
-<div align="center">
-
-<svg width="100%" height="80" viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg">
-  <!-- Quote glitch echo -->
-  <text x="402" y="36" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#00fff5" opacity="0.1">
-    "The right to education is the foundation
-    <animate attributeName="opacity" values="0.1;0.1;0.1;0.25;0.1;0.1;0.1;0.2;0.1;0.1" dur="5s" repeatCount="indefinite"/>
-  </text>
-  <text x="402" y="61" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#00fff5" opacity="0.1">
-    of a free society."
-    <animate attributeName="opacity" values="0.1;0.1;0.1;0.1;0.25;0.1;0.1;0.1;0.1;0.1;0.2;0.1" dur="5s" repeatCount="indefinite"/>
-  </text>
-
-  <text x="400" y="35" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#ff00ff">
-    "The right to education is the foundation
-    <animate attributeName="opacity" values="1;1;1;0.4;1;1;1;1;0.6;1" dur="5s" repeatCount="indefinite"/>
-  </text>
-  <text x="400" y="60" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#ff00ff">
-    of a free society."
-    <animate attributeName="opacity" values="1;1;1;1;0.3;1;1;1;1;1;0.5;1" dur="5s" repeatCount="indefinite"/>
-  </text>
-</svg>
+![Quote](assets/cyberpunk/quote.gif)
 
 <br/>
 
@@ -365,5 +144,3 @@ const nattapat = {
 
 <br/>
 <br/>
-
-</div>
