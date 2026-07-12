@@ -1,54 +1,35 @@
 <div align="center">
 
 <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Neon glow filter -->
-    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 0 0 0 1  0 0 0 0 0.96  0 0 0 1 0" result="cyanBlur"/>
-      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur2"/>
-      <feColorMatrix in="blur2" type="matrix" values="0 0 0 0 1  0 0 0 0 0  0 0 0 0 1  0 0 0 0.6 0" result="magentaBlur"/>
-      <feMerge>
-        <feMergeNode in="magentaBlur"/>
-        <feMergeNode in="cyanBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    
-    <!-- Glitch displacement filter -->
-    <filter id="glitchFilter">
-      <feTurbulence type="fractalNoise" baseFrequency="0.01 0.001" numOctaves="1" seed="1" result="noise">
-        <animate attributeName="baseFrequency" values="0.01 0.001;0.05 0.001;0.01 0.001;0.08 0.002;0.01 0.001" dur="4s" repeatCount="indefinite"/>
-      </feTurbulence>
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G">
-        <animate attributeName="scale" values="0;0;0;15;0;0;0;8;0;0;0;0" dur="4s" repeatCount="indefinite"/>
-      </feDisplacementMap>
-    </filter>
-
-    <!-- Scanline pattern -->
-    <pattern id="scanlines" patternUnits="userSpaceOnUse" width="800" height="4">
-      <rect width="800" height="1" fill="#00fff5" opacity="0.08"/>
-      <rect y="2" width="800" height="1" fill="#00fff5" opacity="0.04"/>
-    </pattern>
-  </defs>
-
   <!-- Background -->
   <rect width="800" height="400" fill="#0a0a0f"/>
-  
-  <!-- Animated scanlines -->
-  <rect width="800" height="400" fill="url(#scanlines)">
-    <animateTransform attributeName="transform" type="translate" values="0,0;0,-4" dur="0.5s" repeatCount="indefinite"/>
-  </rect>
 
-  <!-- Main name with glitch + neon glow -->
-  <g filter="url(#glitchFilter)">
-    <text x="400" y="160" text-anchor="middle" font-family="'Courier New', monospace" font-size="56" font-weight="bold" fill="#00fff5" stroke="#ff00ff" stroke-width="1" filter="url(#neonGlow)">
-      Nattapat Ritter
-      <animate attributeName="opacity" values="1;1;1;1;0.3;1;1;1;1;1;1;1;0.5;1;1" dur="3s" repeatCount="indefinite"/>
-    </text>
-  </g>
+  <!-- Static scanlines (no animation - GitHub strips animateTransform) -->
+  <rect width="800" height="1" y="4" fill="#00fff5" opacity="0.06"/>
+  <rect width="800" height="1" y="8" fill="#00fff5" opacity="0.04"/>
+  <rect width="800" height="1" y="12" fill="#00fff5" opacity="0.06"/>
+  <rect width="800" height="1" y="16" fill="#00fff5" opacity="0.03"/>
+  <rect width="800" height="1" y="20" fill="#00fff5" opacity="0.06"/>
+  <rect width="800" height="1" y="24" fill="#00fff5" opacity="0.04"/>
+  <rect width="800" height="1" y="28" fill="#00fff5" opacity="0.05"/>
+  <rect width="800" height="1" y="32" fill="#00fff5" opacity="0.03"/>
+  <rect width="800" height="1" y="36" fill="#00fff5" opacity="0.06"/>
+  <rect width="800" height="1" y="40" fill="#00fff5" opacity="0.04"/>
 
-  <!-- Alias -->
+  <!-- Glitch echo layer (offset duplicate - creates glitch without filters) -->
+  <text x="402" y="161" text-anchor="middle" font-family="'Courier New', monospace" font-size="56" font-weight="bold" fill="#ff00ff" opacity="0.15">
+    Nattapat Ritter
+    <animate attributeName="opacity" values="0.15;0.15;0.15;0.4;0.15;0.15;0.15;0.3;0.15;0.15" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="402;402;402;408;402;402;402;396;402;402" dur="4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Main name with neon flicker -->
+  <text x="400" y="160" text-anchor="middle" font-family="'Courier New', monospace" font-size="56" font-weight="bold" fill="#00fff5" stroke="#ff00ff" stroke-width="1.5">
+    Nattapat Ritter
+    <animate attributeName="opacity" values="1;1;1;1;0.3;1;1;1;1;1;1;1;0.5;1;1" dur="3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Alias with flicker -->
   <text x="400" y="200" text-anchor="middle" font-family="'Courier New', monospace" font-size="20" fill="#ff00ff" opacity="0.9">
     also known as Backpack
     <animate attributeName="opacity" values="0.9;0.9;0.9;0.4;0.9;0.9;0.9;0.9;0.6;0.9" dur="4s" repeatCount="indefinite"/>
@@ -118,25 +99,13 @@ const nattapat = {
 ## ⚒️ Tech Stack
 
 <svg width="100%" height="50" viewBox="0 0 600 50" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="headerGlitch">
-      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.001" numOctaves="1" seed="2" result="noise">
-        <animate attributeName="baseFrequency" values="0.02 0.001;0.08 0.002;0.02 0.001;0.1 0.001;0.02 0.001" dur="5s" repeatCount="indefinite"/>
-      </feTurbulence>
-      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G">
-        <animate attributeName="scale" values="0;0;0;12;0;0;0;6;0;0" dur="5s" repeatCount="indefinite"/>
-      </feDisplacementMap>
-    </filter>
-    <filter id="headerGlow">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0  0 0 0 0 1  0 0 0 0 0.96  0 0 0 1 0" result="cyanBlur"/>
-      <feMerge>
-        <feMergeNode in="cyanBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <text x="300" y="35" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#00fff5" filter="url(#headerGlow)" filter="url(#headerGlitch)">
+  <!-- Glitch echo for Tech Stack header -->
+  <text x="302" y="36" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#ff00ff" opacity="0.12">
+    ⚒️ Tech Stack
+    <animate attributeName="opacity" values="0.12;0.12;0.12;0.3;0.12;0.12;0.12;0.25;0.12;0.12" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="302;302;302;308;302;302;302;296;302;302" dur="5s" repeatCount="indefinite"/>
+  </text>
+  <text x="300" y="35" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#00fff5">
     ⚒️ Tech Stack
     <animate attributeName="opacity" values="1;1;1;0.4;1;1;1;1;0.6;1" dur="4s" repeatCount="indefinite"/>
   </text>
@@ -198,17 +167,13 @@ const nattapat = {
 ## 🌌 Current Focus
 
 <svg width="100%" height="50" viewBox="0 0 600 50" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="focusGlow">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 1  0 0 0 0 0  0 0 0 0 1  0 0 0 1 0" result="magentaBlur"/>
-      <feMerge>
-        <feMergeNode in="magentaBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  <text x="300" y="35" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#ff00ff" filter="url(#focusGlow)">
+  <!-- Glitch echo -->
+  <text x="302" y="36" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#00fff5" opacity="0.1">
+    🌌 Current Focus
+    <animate attributeName="opacity" values="0.1;0.1;0.1;0.25;0.1;0.1;0.1;0.2;0.1;0.1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="302;302;302;307;302;302;302;297;302;302" dur="4s" repeatCount="indefinite"/>
+  </text>
+  <text x="300" y="35" text-anchor="middle" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#ff00ff">
     🌌 Current Focus
     <animate attributeName="opacity" values="1;1;0.5;1;1;1;0.3;1;1;1" dur="4s" repeatCount="indefinite"/>
   </text>
@@ -261,32 +226,21 @@ const nattapat = {
 <div align="center">
 
 <svg width="100%" height="50" viewBox="0 0 800 50" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <pattern id="statusScanlines" patternUnits="userSpaceOnUse" width="800" height="4">
-      <rect width="800" height="1" fill="#00fff5" opacity="0.05"/>
-    </pattern>
-  </defs>
-  
   <!-- Background -->
   <rect width="800" height="50" rx="6" fill="#0d1117" stroke="#00fff5" stroke-width="1" opacity="0.8"/>
-  
-  <!-- Scanlines -->
-  <rect width="800" height="50" rx="6" fill="url(#statusScanlines)">
-    <animateTransform attributeName="transform" type="translate" values="0,0;0,-4" dur="0.3s" repeatCount="indefinite"/>
-  </rect>
-  
+
   <!-- Left: Status -->
   <circle cx="30" cy="25" r="5" fill="#00ff41">
     <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
   </circle>
   <text x="45" y="29" font-family="'Courier New', monospace" font-size="14" fill="#00ff41">SYSTEM: ONLINE</text>
-  
+
   <!-- Center: OS Name -->
   <text x="400" y="29" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#00fff5" opacity="0.8">
     BACKPACK_OS v2.0
     <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
   </text>
-  
+
   <!-- Right: Mood -->
   <text x="620" y="29" font-family="'Courier New', monospace" font-size="14" fill="#ff00ff">
     MOOD: CODING
@@ -308,51 +262,44 @@ const nattapat = {
       <stop offset="0%" style="stop-color:#00fff5"/>
       <stop offset="100%" style="stop-color:#ff00ff"/>
     </linearGradient>
-    <filter id="barGlow">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
-  
+
   <!-- TypeScript -->
   <text x="130" y="30" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">TypeScript</text>
   <rect x="140" y="18" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="18" width="0" height="20" rx="4" fill="url(#barGradient)" filter="url(#barGlow)">
+  <rect x="140" y="18" width="0" height="20" rx="4" fill="url(#barGradient)">
     <animate attributeName="width" from="0" to="420" dur="1.5s" fill="freeze"/>
   </rect>
   <text x="570" y="33" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">95%</text>
-  
+
   <!-- React/Svelte -->
   <text x="130" y="70" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">React / Svelte</text>
   <rect x="140" y="58" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="58" width="0" height="20" rx="4" fill="url(#barGradient)" filter="url(#barGlow)">
+  <rect x="140" y="58" width="0" height="20" rx="4" fill="url(#barGradient)">
     <animate attributeName="width" from="0" to="396" dur="1.5s" fill="freeze" begin="0.2s"/>
   </rect>
   <text x="546" y="73" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">90%</text>
-  
+
   <!-- Node.js -->
   <text x="130" y="110" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">Node.js</text>
   <rect x="140" y="98" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="98" width="0" height="20" rx="4" fill="url(#barGradient)" filter="url(#barGlow)">
+  <rect x="140" y="98" width="0" height="20" rx="4" fill="url(#barGradient)">
     <animate attributeName="width" from="0" to="378" dur="1.5s" fill="freeze" begin="0.4s"/>
   </rect>
   <text x="528" y="113" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">85%</text>
-  
+
   <!-- Python -->
   <text x="130" y="150" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">Python</text>
   <rect x="140" y="138" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="138" width="0" height="20" rx="4" fill="url(#barGradient)" filter="url(#barGlow)">
+  <rect x="140" y="138" width="0" height="20" rx="4" fill="url(#barGradient)">
     <animate attributeName="width" from="0" to="336" dur="1.5s" fill="freeze" begin="0.6s"/>
   </rect>
   <text x="486" y="153" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">80%</text>
-  
+
   <!-- DevOps -->
   <text x="130" y="190" text-anchor="end" font-family="'Courier New', monospace" font-size="14" fill="#e0e0e0">DevOps</text>
   <rect x="140" y="178" width="420" height="20" rx="4" fill="#1a1a2e"/>
-  <rect x="140" y="178" width="0" height="20" rx="4" fill="url(#barGradient)" filter="url(#barGlow)">
+  <rect x="140" y="178" width="0" height="20" rx="4" fill="url(#barGradient)">
     <animate attributeName="width" from="0" to="315" dur="1.5s" fill="freeze" begin="0.8s"/>
   </rect>
   <text x="465" y="193" font-family="'Courier New', monospace" font-size="14" fill="#00fff5">75%</text>
@@ -379,22 +326,21 @@ const nattapat = {
 <div align="center">
 
 <svg width="100%" height="80" viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="quoteGlow">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
-      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 1  0 0 0 0 0  0 0 0 0 1  0 0 0 0.8 0" result="magentaBlur"/>
-      <feMerge>
-        <feMergeNode in="magentaBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  
-  <text x="400" y="35" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#ff00ff" filter="url(#quoteGlow)">
+  <!-- Quote glitch echo -->
+  <text x="402" y="36" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#00fff5" opacity="0.1">
+    "The right to education is the foundation
+    <animate attributeName="opacity" values="0.1;0.1;0.1;0.25;0.1;0.1;0.1;0.2;0.1;0.1" dur="5s" repeatCount="indefinite"/>
+  </text>
+  <text x="402" y="61" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#00fff5" opacity="0.1">
+    of a free society."
+    <animate attributeName="opacity" values="0.1;0.1;0.1;0.1;0.25;0.1;0.1;0.1;0.1;0.1;0.2;0.1" dur="5s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="400" y="35" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#ff00ff">
     "The right to education is the foundation
     <animate attributeName="opacity" values="1;1;1;0.4;1;1;1;1;0.6;1" dur="5s" repeatCount="indefinite"/>
   </text>
-  <text x="400" y="60" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#ff00ff" filter="url(#quoteGlow)">
+  <text x="400" y="60" text-anchor="middle" font-family="'Courier New', monospace" font-size="16" font-style="italic" fill="#ff00ff">
     of a free society."
     <animate attributeName="opacity" values="1;1;1;1;0.3;1;1;1;1;1;0.5;1" dur="5s" repeatCount="indefinite"/>
   </text>
