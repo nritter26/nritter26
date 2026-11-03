@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/synthwave/scene.svg" alt="A mallard on a railing watching a neon Arch logo rise over a synthwave lake" width="100%"/>
+<img src="scene.svg" alt="A mallard on a railing watching a neon Arch logo rise over a synthwave lake" width="100%"/>
 
 <h1 align="center">MALLARDED</h1>
 
