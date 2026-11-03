@@ -64,11 +64,8 @@ func main() {
 
 ## ⏱️ Coding Activity
 
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=19074f10-9659-4d42-a05c-4514418c6636" alt="WakaTime stats"/>
-
-</div>
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 ---
 
