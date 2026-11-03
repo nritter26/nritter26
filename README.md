@@ -26,7 +26,6 @@ package main
 import "fmt"
 
 type Engineer struct {
-	Age               int
 	Citizenship       []string
 	Location          string
 	Role              string
@@ -36,7 +35,6 @@ type Engineer struct {
 
 func main() {
 	mallarded := Engineer{
-		Age:         29,
 		Citizenship: []string{"Swiss", "Thai"},
 		Location:    "Bangkok, Thailand",
 		Role:        "Backend & Systems Engineer",
@@ -58,7 +56,7 @@ func main() {
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=go,ts,bun,vue,vite,postgres,redis,docker,linux,neovim,git&perline=11&theme=dark" alt="Tech stack"/>
+<img src="https://skillicons.dev/icons?i=c,go,ts,neovim,bun,arch,ubuntu,docker,raspberrypi,gcp,postgres,redis&perline=11&theme=dark" alt="Tech stack"/>
 
 </div>
 
