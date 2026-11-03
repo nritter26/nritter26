@@ -66,7 +66,7 @@ func main() {
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=19074f10-9659-4d42-a05c-4514418c6636&layout=compact&bg_color=1a1033&title_color=ff2e97&text_color=00fff5&icon_color=f9c80e&border_color=ff2e97&langs_count=8&range=all_time&cache_seconds=300" alt="WakaTime stats"/>
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=19074f10-9659-4d42-a05c-4514418c6636" alt="WakaTime stats"/>
 
 </div>
 
