@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/synthwave/hero.svg" alt="Synthwave banner" width="100%"/>
+<img src="assets/synthwave/scene.svg" alt="A mallard on a railing watching a neon Arch logo rise over a synthwave lake" width="100%"/>
 
-<br/>
+<h1 align="center">MALLARDED</h1>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&width=730&center=true&vCenter=true&multiline=true&repeat=true&color=ff2e97&background=1a103300&lines=%22The+right+to+education+is+the+foundation+of+a+free+society.%22;%22Building+low-latency+systems+and+bare-metal+infrastructure.%22)](https://git.io/typing-svg)
 
